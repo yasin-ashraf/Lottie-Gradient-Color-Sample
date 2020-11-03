@@ -10,7 +10,7 @@
         android:id="@+id/animation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:lottie_rawRes="@raw/single_gr"
+        app:lottie_rawRes="@raw/strides_v2_gradiant"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

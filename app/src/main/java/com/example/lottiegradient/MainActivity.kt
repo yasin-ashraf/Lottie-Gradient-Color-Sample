@@ -17,7 +17,29 @@ class MainActivity : AppCompatActivity() {
 //        multipleLayers()
 
         //for single layer json
-        singleLayer()
+//        singleLayer()
+
+        //for strides_v2_gradient.json
+        singleLayerStrides()
+    }
+
+    private fun singleLayerStrides() {
+        val color1 = Color.parseColor("#FF4FCE")
+        val color2 = Color.parseColor("#C91CFF")
+        val color3 = Color.parseColor("#FC6076")
+
+        animation_view.apply {
+            repeatCount = LottieDrawable.INFINITE
+            repeatMode = LottieDrawable.RESTART
+            speed = 0.5f
+            addValueCallback(
+                KeyPath("Shape Layer 1", "Rectangle 1", "Gradient Fill 1"),
+                LottieProperty.GRADIENT_COLOR,
+                {
+                    arrayOf(color1, color2, color3)
+                })
+            playAnimation()
+        }
     }
 
     /**
