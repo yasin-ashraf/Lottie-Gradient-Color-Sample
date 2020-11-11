@@ -13,4 +13,10 @@
         app:lottie_rawRes="@raw/strides_v2_gradiant"
         />
 
+    <com.example.lottiegradient.customView.LottieView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
